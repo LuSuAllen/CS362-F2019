@@ -65,7 +65,7 @@ int main () {
     G.hand[opponent1][0] = remodel;
     G.hand[opponent1][1] = gold;
 
-    // 2: give opponent treaure card victory card
+    // 2: give opponent treasure card victory card
     G_2.handCount[opponent1] = 2;
     G_2.hand[opponent1][0] = gold;
     G_2.hand[opponent1][1] = estate;
@@ -75,7 +75,7 @@ int main () {
     G_3.hand[opponent1][0] = estate;
     G_3.hand[opponent1][1] = duchy;
 
-    // 1: give opponent treaure card same treasure card
+    // 1: give opponent treasure card same treasure card
     G_4.handCount[opponent1] = 2;
     G_4.hand[opponent1][0] = copper;
     G_4.hand[opponent1][1] = copper;
