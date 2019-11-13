@@ -37,7 +37,7 @@ int main () {
 
 
     //
-    // check that mine replaced treasure with another treasute vosting up to 3 more than it.
+    // check that mine replaced treasure with another treasure costing up to 3 more than it.
     //
 
     // 1: test copper to silver
