@@ -60,7 +60,7 @@ int main () {
     memcpy(&G_3, &G, sizeof(struct gameState));
     memcpy(&G_4, &G, sizeof(struct gameState));
 
-    // 1: give opponent action card treaure card
+    // 1: give opponent action card treasure card
     G.handCount[opponent1] = 2;
     G.hand[opponent1][0] = remodel;
     G.hand[opponent1][1] = gold;
