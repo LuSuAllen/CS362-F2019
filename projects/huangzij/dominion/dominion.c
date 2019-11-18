@@ -706,7 +706,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
         if (choice1 >= 0) { //Boolean true or going to discard an estate
             int p = 0;//Iterator for hand!
             int card_not_discarded = 0;//Flag for discard set!
+            printf("%d\n",state->handCount[currentPlayer]);
             while(card_not_discarded) {
+                printf("p = %d\n",p);
                 if (state->hand[currentPlayer][p] == estate) { //Found an estate card!
                     state->coins += 4;//Add 4 coins to the amount of coins
                     state->discard[currentPlayer][state->discardCount[currentPlayer]] = state->hand[currentPlayer][p];
@@ -719,6 +721,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
                     card_not_discarded = 0;//Exit the loop
                 }
                 else if (p > state->handCount[currentPlayer]) {
+                    printf("HERE\n");
                     if(DEBUG) {
                         printf("No estate cards in your hand, invalid choice\n");
                         printf("Must gain an estate if there are any\n");
